@@ -1,0 +1,21 @@
+
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="bootstrap_dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="View/css/styleLogin.css">
+<div class="container">
+    <div class="card card-container">
+        <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+        <h1>SENET</h1>
+        <h2> Inicia sesión</h2>
+        <p id="profile-name" class="profile-name-card"></p>
+
+        <form class="form-signin" action="Controlador/comprueba_login_controlador.php" method="POST" autocomplete="nope">
+            <input type="text" name="login" placeholder="Nombre usuario" class="form-control" required />
+            <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">INICIAR SESSION</button>
+        </form>
+        <a href="recuperarPassword.php" class="forgot-password"> No me acuerdo de mi contraseña </a>
+        <a href="CrearCuentaUsuario.php" class=""> Darse de Alta </a>
+        <a href="index.php" class=""> Volver a la pagina principal </a>
+    </div>
+</div>

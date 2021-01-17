@@ -1,0 +1,415 @@
+
+
+.contenido-header h1{
+	color: white;
+	padding-bottom: 1rem;
+	max-width: 60rem;
+	line-height: 2;
+}
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    line-height: 55px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    z-index: 3;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 0.5rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.6rem;
+}
+
+.nav div.logo a:hover {
+    color:#8B0000;
+}
+
+.nav div.main_list {
+    height: 55px;
+    float: right;
+
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 55px;
+    padding: 0;
+    padding-right: 0rem;
+
+}
+/*
+///////////////////////////////////////////
+*/
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin:10px;
+    line-height: 55px;
+    font-size: 2.6rem;
+    padding:10px;
+
+}
+
+.nav div.main_list ul li a:hover {
+  color:#8B0000;
+}
+
+
+/* Home section */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image:url('../imagenes/fondo.png');
+    background-position: center top;
+    background-size:cover;
+}
+
+
+/*header Proponer mis juegos*/
+.contenedoor {
+    background-image:url(../imagenes/fondoProponerMisJuegos.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    min-height: 10rem;
+}
+
+
+.contenedoor2 {
+    background-image:url(../imagenes/jeux-vrac.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    min-height: 10rem;
+}
+
+/* Fin header Proponer mis juegos */
+.navTrigger {
+    display: none;
+}
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+
+    }
+
+
+    .nav div.logo {
+        margin-left: 15px;
+
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+
+        overflow: hidden;
+        float: right;
+         
+
+
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 50%;
+        height: 20vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #7da2cd;
+      
+        
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+        height: 30px !important;
+    }
+    .nav div.main_list ul li a {
+transition: 0.3s;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);  
+
+
+}
+
+
+@media all and (max-width:700px){
+	.myP {
+		padding:2%;
+	}
+}
+@media (max-width: 320px) {
+ .texto { font-size: 3em; }
+}
+
+
+/******estilo dropdown usuario header *********/
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #7da2cd;
+  min-width: 40px;
+  text-align: left;
+  box-shadow: 0px 16px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  margin: 5px !important;
+  line-height: 5px !important;
+  padding: 10px !important;
+  padding-top: 0px !important;
+  padding-bottom: 20px !important;
+  max-height: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.show {display: block;}
