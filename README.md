@@ -1,7 +1,6 @@
 DAW Proyecto.
 Proyecto fin de ciclo de Desarrollo de Aplicaciones Web DAW.
-Mi proyecto de Ilerna Online de Técnico Superior en Desarrollo de Aplicaciones Web a distancia.
-Consiste en una página web para la venta y el alquiler de juegos de mesa entre particulares. 
+Mi proyecto de Ilerna Online consiste en una página web para la venta y el alquiler de juegos de mesa entre particulares. 
 
 
 SENET is a Web Page designed to rent or buy board games between private parties. I tried to create a responsive web page.
