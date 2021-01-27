@@ -191,8 +191,8 @@ $resutados = $preciosProductos->getPreciosJuegoUsuario($id);
 </table> 
 </div>
 
-
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAhS3viROB_tPYZ-MFSW1CHLpV9Mxxnyus"></script>
+<!-- key to be changed -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=key"></script>
 <script src="Jquerydownloadfile/jquery-3.4.1.min.js"></script>
 
 <script src="View/templateJS/crearCuenta.js" ></script>
