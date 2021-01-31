@@ -29,9 +29,9 @@ if (isset($_GET['emailUsuarioActivo']))
   $mail->Port       = 587;
   $mail->SMTPDebug  = 1;
   $mail->SMTPAuth   = true;
-  $mail->Username   = 'informationSenet@gmail.com';
-  $mail->Password   = 'Info@000';
-  $mail->SetFrom('informationSenet@gmail.com', "SENET");
+  $mail->Username   = 'xxx@gmail.com';//email
+  $mail->Password   = '';//password
+  $mail->SetFrom('@gmail.com', "SENET");//email
   $mail->AddReplyTo('no-reply@mycomp.com','no-reply');
   $mail->Subject    = 'Confirmación de reserva de un juego de mesa';
   $mail->MsgHTML($body);
